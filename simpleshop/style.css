@@ -1,0 +1,146 @@
+body{
+    margin: 0px;
+}
+header{
+ height: 400px;
+ background-image: url("images/backdrop.png");
+ background-size: cover;
+}
+
+.title{
+    width: 60%;
+    float: left;
+    height: inherit;
+    overflow: visible;
+}
+
+.title h1{
+    font-size: 150px;
+    text-align: center;
+    margin-bottom: 20px;
+    color: rgba(236, 41, 41, 0.89);
+}
+
+.title p{
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    color: rgba(3, 3, 3, 0.774);
+}
+
+.logo{
+    width: 40%;
+    background-image: url("images/logo.png");
+    float: left;
+    height: inherit;
+    image-rendering: optimizeQuality;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+}
+
+
+section{
+    margin: auto;
+    box-sizing: border-box;
+    padding: 10px;
+    background-color: rgb(62, 235, 163);
+}
+.product-section h3{
+    text-align: center;
+    color: tomato;
+    font-size: 25px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+
+
+.product-row{
+    display: flex;
+    justify-content: center;
+
+}
+
+.products{
+    width: 25%;
+    margin: 20px;
+    height: 500px;
+    padding: 10px 10px;
+    background-color: rgb(235, 241, 241);
+    border-radius: 20px;
+}
+
+
+
+.product-image{
+    display: flex;
+    justify-content: center;
+    background-color: rgba(236, 41, 41, 0.89);
+}
+
+
+.product-text{
+    color: rgb(121, 107, 247);
+    padding: 20px;
+    font-size: 18px;
+    font-family: 'Times New Roman', Times, serif;
+}
+
+
+.contact{
+    padding: 20px;
+    width: 0%;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    clear: both;
+    color: black;
+    background-color: rgb(31, 187, 161);
+    border-radius: 20px;
+    font-size: 20px;
+    box-sizing: border-box;
+}
+
+.contact span{
+    font-weight: bold;
+    color: rgb(131, 44, 189);
+}
+
+
+.loaction{
+    box-sizing: border-box;
+    height: 200px;
+    width: 50%;
+    background-image: url("images/map.png");
+    background-color: saddlebrown;
+}
+
+@media screen and (max-width:480px){
+    .header{
+        height: auto
+    }
+    .title{
+        width: 100%;
+    }
+    .title h1{
+        font-size: 80px;
+    }
+    .logo{
+        width:100%
+    }
+
+    .product-row{
+        display: block;
+    }
+    .products{
+        width: 100%;
+        font-size: 15px;
+    }
+
+    .product-image{
+        width: inherit;
+    }
+
+    .contact{
+        width:100% ;
+        font-size: 15px;
+    }
+}
